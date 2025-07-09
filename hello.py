@@ -8,6 +8,6 @@ def submit():
     username = request.form.get["username"]
     email = request.form.get["email"]
     year = request.form.get["year"]
-    return render_template('results.html', name=username, email=email, year=year)
+    return render_template('results.html', name=username, email=email)
 if __name__ == '__main__':
     app.run(debug=True)
